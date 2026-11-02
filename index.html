@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nishanth Vikraman — independent experiments in computing, systems and physical computation." />
+  <title>Nishanth Vikraman — Research</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="site-shell topbar-inner">
+      <a class="brand" href="index.html">Nishanth / Research</a>
+      <nav class="nav">
+        <a href="#research">research</a>
+        <a href="#principles">method</a>
+        <a href="#about">about</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="hero" id="about">
+      <div>
+        <div class="kicker">Independent research notebook / Chennai</div>
+        <h1 id="hero-name">Nishanth Vikraman</h1>
+        <div class="hero-copy" id="hero-copy"></div>
+      </div>
+      <div class="stat-stack" id="stats"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Selected experiments</h2>
+        <p></p>
+      </div>
+      <div class="feature-grid" id="feature-grid"></div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">Research graph</div>
+          <h2>Everything connects.</h2>
+        </div>
+        <div class="research-controls" aria-label="Research view">
+          <button class="active" data-view="map">Map</button>
+          <button data-view="timeline">Timeline</button>
+        </div>
+      </div>
+
+      <div id="map-view" class="view active">
+        <div class="map-wrap" id="map-wrap">
+          <svg class="map-svg" aria-hidden="true"></svg>
+        </div>
+        <div class="map-legend" id="map-legend" aria-label="Experiment status colors"></div>
+      </div>
+      <div id="timeline-view" class="view">
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="section-heading">
+        <h2>Method</h2>
+        <p></p>
+      </div>
+      <div class="principles-grid">
+        <div class="principle"><div class="n">01 / FALSIFIABLE</div><h3>Measure the oracle first.</h3><p>Before optimizing a predictor or implementation, establish whether the best possible decision has enough headroom to matter.</p></div>
+        <div class="principle"><div class="n">02 / EVIDENCE</div><h3>Keep the receipts.</h3><p>Claims link outward to code, raw results and plots. The public write-up is allowed to be elegant because the underlying artifacts remain inspectable.</p></div>
+        <div class="principle"><div class="n">03 / NEGATIVE RESULTS</div><h3>Kill branches in public.</h3><p>A failed transistor topology or an absent GPU oracle gap is a research result. Rejected branches stay visible instead of being rewritten as progress.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-shell footer">
+    <span>© <span id="year"></span> Nishanth Vikraman</span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
